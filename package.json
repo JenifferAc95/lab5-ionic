@@ -1,5 +1,5 @@
 {
-    "name": "lab5-ionic",
+    "name": "EventosIonic",
     "version": "0.0.1",
     "author": "Ionic Framework",
     "homepage": "http://ionicframework.com/",
@@ -25,6 +25,8 @@
         "@ionic-native/splash-screen": "3.7.0",
         "@ionic-native/status-bar": "3.7.0",
         "@ionic/storage": "2.0.1",
+        "angularfire2": "^4.0.0-rc.0",
+        "angularfire2-offline": "^4.1.4",
         "cordova-android": "^6.2.3",
         "cordova-plugin-console": "^1.0.5",
         "cordova-plugin-device": "^1.1.4",

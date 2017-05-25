@@ -9,6 +9,7 @@ import { EventsPage } from '../events/events';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  eventsPage = EventsPage;
   userProfile: any = null;
   zone: NgZone;
 
@@ -33,7 +34,7 @@ export class HomePage {
       firebase.auth().signInWithCredential(firebase.auth.GoogleAuthProvider.credential(res.idToken))
         .then( success => {
           console.log("Firebase success: " + JSON.stringify(success));
-          //this.app.getRootNav().setRoot(EventsPage);
+          this.app.getRootNav().setRoot(EventsPage);
         })
         .catch( error => console.log("Firebase failure: " + JSON.stringify(error)));
       }).catch(err => console.error("Error: ", err));

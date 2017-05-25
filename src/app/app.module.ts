@@ -7,26 +7,46 @@ import { GooglePlus } from '@ionic-native/google-plus'
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { FirebaseProvider } from '../providers/firebase/firebase';
+import { EventsPage } from '../pages/events/events';
+import { HttpModule } from '@angular/http';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA7BkJS_lb4HEXQNeiLxG_Hi-XITVbJjMM",
+  authDomain: "fir-ioniclab5.firebaseapp.com",
+  databaseURL: "https://fir-ioniclab5.firebaseio.com",
+  projectId: "firebase-ioniclab5",
+  storageBucket: "firebase-ioniclab5.appspot.com",
+  messagingSenderId: "1009280345719"
+  };
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    EventsPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(firebaseConfig),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    EventsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     GooglePlus,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FirebaseProvider
   ]
 })
 export class AppModule {}
