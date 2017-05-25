@@ -50,7 +50,7 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-googleplus": {
-                "REVERSED_CLIENT_ID": "com.googleusercontent.apps.755928407690-k8398gjuhkpsaid95b2k6bth6b77u91e"
+                "REVERSED_CLIENT_ID": "com.googleusercontent.apps.1009280345719-487jkn2qg47mokspiudl89vt5hbppf6o"
             },
             "cordova-plugin-console": {},
             "cordova-plugin-device": {},

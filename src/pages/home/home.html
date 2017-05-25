@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic App
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -14,14 +14,11 @@
   </button>
 
   <ion-item *ngIf="userProfile">
-
     <ion-avatar item-left>
       <img [src]="userProfile.photoURL">
     </ion-avatar>
     <h2>{{ userProfile.displayName }}</h2>
     <h3>{{ userProfile.email }}</h3>
-
+    <p>Holi</p>
   </ion-item>
-
-
 </ion-content>

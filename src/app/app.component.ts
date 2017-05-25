@@ -13,12 +13,12 @@ export class MyApp {
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     firebase.initializeApp({
-      apiKey: "AIzaSyDkMUTyKTxN0qIxleTdoRAIGdzArx6-2hU",
-      authDomain: "lab5-ionic-firebase.firebaseapp.com",
-      databaseURL: "https://lab5-ionic-firebase.firebaseio.com",
-      projectId: "lab5-ionic-firebase",
-      storageBucket: "lab5-ionic-firebase.appspot.com",
-      messagingSenderId: "755928407690"
+      apiKey: "AIzaSyA7BkJS_lb4HEXQNeiLxG_Hi-XITVbJjMM",
+      authDomain: "fir-ioniclab5.firebaseapp.com",
+      databaseURL: "https://fir-ioniclab5.firebaseio.com",
+      projectId: "firebase-ioniclab5",
+      storageBucket: "firebase-ioniclab5.appspot.com",
+      messagingSenderId: "1009280345719"
     });
 
 
